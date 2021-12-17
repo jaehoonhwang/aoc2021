@@ -1,14 +1,17 @@
 from absl import app, flags
 from base.day import Day
+
 from day4.day4 import Day4
+from day5.day5 import Day5
 
 FLAGS = flags.FLAGS
-flags.DEFINE_integer("day", 4, "aoc2021 day", lower_bound=4, upper_bound=4)
+flags.DEFINE_integer("day", 5, "aoc2021 day", lower_bound=4, upper_bound=5)
 flags.DEFINE_integer("problem", 0, "problem", lower_bound=0, upper_bound=2)
 flags.DEFINE_string("data", "problem", "example or problem")
 
 problems = {
-    4: Day4(4)
+    4: Day4(4),
+    5: Day5(5),
 }
 
 def main(argv):

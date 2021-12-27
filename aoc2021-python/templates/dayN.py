@@ -1,6 +1,7 @@
 from base.day import Day
 from utils.file_reader import read_file
 
+
 class DayN(Day):
     data_source = {
         "example": "dayN/data/example.txt",
@@ -12,10 +13,10 @@ class DayN(Day):
         self.path = ""
 
     def problem_one(self, data):
-        self.path = data_source[data]
+        self.path = self.data_source[data]
 
     def problem_two(self, data):
-        self.path = data_source[data]
+        self.path = self.data_source[data]
 
     def calculate(self, board, marks):
         pass
@@ -23,4 +24,3 @@ class DayN(Day):
     def prettify_data(self):
         lines = read_file(self.path)
         return lines
-
